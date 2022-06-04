@@ -1,0 +1,122 @@
+body {
+    background-color: #f3fcff;
+}
+
+.navbar {
+    background-color: rgba(0, 186, 255, 0.15);
+}
+
+.navlink {
+    color: #24414c;
+    font-weight: 500;
+}
+
+.product-card {
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px;
+    border: 1.8px solid #c2e8f7;
+}
+
+@media screen and (max-width: 800px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+}
+
+.list-group-item {
+    border: 1.8px solid #c2e8f7;
+    background-color: #e7f6fe;
+    font-weight: 500;
+}
+
+.image-container {
+    width: calc(100% - 50px);
+    position: relative;
+    height: 200px;
+    margin: 20px auto 0;
+}
+
+.image-container img {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    font-family: "object-fit: contain;";
+    max-height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 100%;
+}
+
+.tab-content>.tab-pane .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-group-item.active span {
+    background-image: url('img/chevron-right-white.png');
+    right: 0;
+    top: 0;
+    width: 13px;
+    height: 13px;
+    display: block;
+    z-index: 8;
+    background-size: cover;
+}
+
+.cart-items p {
+    margin: 0;
+}
+
+.cart-items p.product-price {
+    font-size: 16px;
+}
+
+.total-price {
+    font-size: 20px;
+}
+
+.cart-items button {
+    outline: 0;
+}
+
+.fake-input {
+    display: none;
+}
+
+.btn-primary {
+    background-color: #00aeef;
+    border: 1px solid #00aeef;
+}
+
+.list-group-item.active {
+    background-color: #00aeef;
+    border-color: #00aeef;
+}
+
+.jumbotron {
+    background-color: rgba(0, 147, 239, 0.05) !important;
+}
+
+.close {
+    color: #d32011;
+}
+
+footer {
+    background-color: #e7f6fe;
+}
+
+label {
+    font-weight: 600;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Toymate</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="about.html">About Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Summer Sale</h1>
+            <p class="lead">Browse the shop and collect new items.</p>
+            <hr class="my-4">
+            <p>New products to choose from!</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#shopNow" role="button">Shop now</a>
+            </p>
+        </div>
+    </div>
+    <div class="container mb-5 pt-5" id="shopNow">
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <h3 class="mb-4">Product Categories</h3>
+                <div class="list-group mb-5" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="lego-list" data-toggle="list"
+                        href="#lego" role="tab">Lego
+                        <span></span>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="vehicles-list" data-toggle="list"
+                        href="#vehicles" role="tab">Vehicles
+                        <span></span>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="dolls-list" data-toggle="list" href="#dolls"
+                        role="tab">Dolls
+                        <span></span>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="creativity-list" data-toggle="list"
+                        href="#creativity" role="tab">Creativity
+                        <span></span>
+                    </a>
+                </div>
+
+                <div class="cart-container">
+                    <h3>Cart</h3>
+                    <hr>
+                    <div class="list-group cart-items">
+                    </div>
+                </div>
+                <hr>
+                <div class="list-group total-container">
+                    <div class="list-group-item">
+                        <span>Total:</span>
+                        <span class="total-price font-weight-bold"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12">
+                <h3 class="mb-4">Products</h3>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="lego" role="tabpanel">
+                        <div class="product-list"></div>
+                    </div>
+                    <div class="tab-pane fade" id="vehicles" role="tabpanel">
+                        <div class="product-list"></div>
+                    </div>
+                    <div class="tab-pane fade" id="dolls" role="tabpanel">
+                        <div class="product-list"></div>
+                    </div>
+                    <div class="tab-pane fade" id="creativity" role="tabpanel">
+                        <div class="product-list"></div>
+                    </div>
+                </div>
+                <h3 class="mt-5">Delivery Details</h3>
+                <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET">
+                    <div class="form-group">
+                        <label for="cust_name">Name</label>
+                        <input type="text" class="form-control" name="cust_name" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="custo_email">Email address</label>
+                        <input type="custo_email" class="form-control" name="cust_email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="cust_addr">Delivery Address</label>
+                        <input type="text" class="form-control" name="cust_addr" placeholder="Enter Address">
+                    </div>
+                    <input type="text" class="fake-input" name="cust_order">
+                    <button type="submit" class="btn btn-primary">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="card-template">
+        <div class="card product-card">
+            <div class="image-container">
+                <img class="card-img-top" src="" alt="product image">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary btn-addToCart">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <footer class="py-5">
+        <div class="container">
+            <p class="m-0 text-center text-black">Copyright &copy; Toymate 2022</p>
+        </div>
+    </footer>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
